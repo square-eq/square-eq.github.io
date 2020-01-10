@@ -1,17 +1,17 @@
 @media screen {	
-	*{
-		font-family: 'Montserrat', sans-serif;
-	}
 	p{
 		margin-left: 10px;
+		font-family: 'Montserrat', sans-serif;
 	}
 		input{
 			width: 100px;
 			height: 25px;
+			font-family: 'Montserrat', sans-serif;
 			text-align: center;
 		}
 		label {
 			margin-left: 10px;
+			font-family: 'Montserrat', sans-serif;
 		}
 		.input {
 			background: green;
@@ -30,6 +30,7 @@
     		position: relative;
     		border: 1px solid black;
     		padding: 0 1rem;
+			font-family: 'Montserrat', sans-serif;
 		}
 		body{
 		background-image: url(m9_2.png);
@@ -42,6 +43,7 @@
 			background: #66CDAA;
 			margin: auto;
 			width:850px;
+		font-family: 'Montserrat', sans-serif;
 
 	}
 	.input2 
@@ -51,6 +53,7 @@
 		display: block;
 		height: 50px;
 		width: 200px;
+		font-family: 'Montserrat', sans-serif;
 
 	}
 	.output{
@@ -60,6 +63,7 @@
 		height: 50px;
 		width: 300px;
 		font-size: 30px;
+		font-family: 'Montserrat', sans-serif;
 	}
   	ul.nav {
 
