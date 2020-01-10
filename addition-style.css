@@ -1,4 +1,8 @@
 @media screen {	
+	*
+	{
+		font-family: 'Times New Roman';
+	}
 	p{
 		margin-left: 10px;
 		font-family: 'Montserrat', sans-serif;
