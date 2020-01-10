@@ -96,6 +96,7 @@
         align-items: center;
         display:table-cell;
         height: 30px;
+	font-family: 'Times New Roman';
 	}
 	ul.nav a:hover {
 		background-color: #333;
