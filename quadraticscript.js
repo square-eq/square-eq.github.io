@@ -55,6 +55,10 @@ draw.onclick = function() {
 		{
 			form.ok.value = a + "x²" + "+" + b + "x" + "+" + c + " = 0;";
 		}
+		if (a > 0 && b > 0 && c < 0)
+		{
+			form.ok.value = a + "x²" + "+" + b + "x" + "+" + c + " = 0;";
+		}
 		if (a < 0 && b > 0 && c < 0)
 		{
 			form.ok.value = a + "x²" + "+" + b + "x" + c + " = 0;";
