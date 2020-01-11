@@ -43,55 +43,34 @@ draw.onclick = function() {
 	var b = form.old.value;
 	var c = form.free.value;
 	// Перевірка умов під час створення формули. Перевірка коефіцієнтів та запис їх у input.
-		if (a > 1 && b > 0 && c > 0)
-		{
-			form.ok.value = a + "x²" + "+"  + b + "x" + "+" + c + " = 0;";
-		}
-		if (a == 1 && b > 0 && c > 0)
-		{
-			form.ok.value = "x²" + "+"  + b + "x" + "+" + c + " = 0;";
-		}
-		if (a == 1 && b < 0 && c > 0)
-		{
-			form.ok.value = "x²"  + b + "x" + "+" + c + " = 0;";
-		}
-		if (a == -1 && b > 0 && c > 0)
-		{
-			form.ok.value = "-x²" + "+"  + b + "x" + "+" + c + " = 0;";
-		}
-		if (a == 1 && b  > 0 && c < 0)
-		{
-			form.ok.value = "x²" + "+"  + b + "x" + c + " = 0;";
-		}
-		if (a == -1 && b > 0 && c < 0)
-		{
-			form.ok.value = "-x²" + "+"  + b + "x" + c + " = 0;";
-		}
-		if (a < -1 && b < 0 && c < 0)
-		{
-			form.ok.value = a + "x²"  + b + "x" + c + " = 0;";
-		}
-		if (a == -1 && a < 0 && b < 0)
-		{
-			form.ok.value = "-x²"  + b + "x" + c + " = 0;";
-		}
-		if (a < -1 && b > 0 && c > 0)
-		{
-			form.ok.value = a + "x²" + "+" + b + "x" + "+" + c + " = 0;";
-		}
-		if (a < -1 && b > 0 && c < 0)
-		{
-			form.ok.value = a + "x²" + "+" + b + c + " = 0;";
-		}
-		if (a == 1 && b < 0 && c < 0)
-		{
-			form.ok.value = "x²"  + b + c + " = 0;";	
-		}
+	var answer = "";
+	if (a == -1)
+	{
+		answer+="-x²";
+	} else if (a == 1)
+	{
+		answer+="x²";
+	} else {
+		answer+=a + "x²";
+	}
+	if (b < 0)
+	{
+		answer+=b + "x";
+	} else {
+		answer+="+" + b + "x";
+	}
+	if (c < 0)
+	{
+		answer+=c + " =0;";
+	} else {
+		answer+= "+" + c + "=0;";
+	}
+	form.ok.value = answer;
 // Обчислювання формул.
+		if (a < 0 && b )
 		var D;
 		var x1;
 		var x2;
-	
 		D = (b*b-4*a*c);
 		x1 = (-b+Math.sqrt(D))/(2*a);
 		x2 = (-b-Math.sqrt(D))/(2*a);
