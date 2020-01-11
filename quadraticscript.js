@@ -72,6 +72,7 @@ draw.onclick = function() {
 		var D;
 		var x1;
 		var x2;
+	
 		D = (b*b-4*a*c);
 		x1 = (-b+Math.sqrt(D))/(2*a);
 		x2 = (-b-Math.sqrt(D))/(2*a);
