@@ -78,6 +78,6 @@ draw.onclick = function() {
 		{
 			form.roots.value = "Коренi вiдстунi!";
 		} else {
-			form.roots.value = Math.floor(x1) + "; " + Math.floor(x2);
+			form.roots.value = x1.toFixed(3) + "; " + x2.toFixed(3);
 		}
 }
