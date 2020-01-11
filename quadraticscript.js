@@ -43,41 +43,45 @@ draw.onclick = function() {
 	var b = form.old.value;
 	var c = form.free.value;
 	// Перевірка умов під час створення формули. Перевірка коефіцієнтів та запис їх у input.
-		if (a > 0 && b > 0 && c > 0)
+	if (a > 0 && b > 0 && c > 0)
 		{
 			form.ok.value = a + "x²" + "+"  + b + "x" + "+" + c + " = 0;";
 		}
-		if (a < 0 && b < 0 && c < 0)
+		if (a == 1 && b > 0 && c > 0)
+		{
+			form.ok.value = "x²" + "+"  + b + "x" + "+" + c + " = 0;";
+		}
+		if (a == 1 && b < 0 && c > 0)
+		{
+			form.ok.value = "x²"  + b + "x" + "+" + c + " = 0;";
+		}
+		if (a == -1 && b > 0 && c > 0)
+		{
+			form.ok.value = "-x²" + "+"  + b + "x" + "+" + c + " = 0;";
+		}
+		if (a == 1 && b  > 0 && c < 0)
+		{
+			form.ok.value = "x²" + "+"  + b + "x" + c + " = 0;";
+		}
+		if (a == -1 && b > 0 && c < 0)
+		{
+			form.ok.value = "-x²" + "+"  + b + "x" + c + " = 0;";
+		}
+		if (a < -1 && b < 0 && c < 0)
 		{
 			form.ok.value = a + "x²"  + b + "x" + c + " = 0;";
+		}
+		if (a == -1 && a < 0 && b < 0)
+		{
+			form.ok.value = "-x²"  + b + "x" + c + " = 0;";
 		}
 		if (a < 0 && b > 0 && c > 0)
 		{
 			form.ok.value = a + "x²" + "+" + b + "x" + "+" + c + " = 0;";
 		}
-		if (a > 0 && b > 0 && c < 0)
-		{
-			form.ok.value = a + "x²" + "+" + b + "x" + "+" + c + " = 0;";
-		}
 		if (a < 0 && b > 0 && c < 0)
 		{
-			form.ok.value = a + "x²" + "+" + b + "x" + c + " = 0;";
-		}
-		if (a > 0 && b < 0 && c > 0)
-		{
-			form.ok.value = a + "x²"  + b + "x" + "+" + c + " = 0;";	
-		}
-		if (a > 0 && b < 0 && c < 0)
-		{
-			form.ok.value = a + "x²"  + b + "x" + c + " = 0;";
-		}
-		if (a < 0 && b < 0 && c > 0)
-		{
-			form.ok.value = a + "x²"  + b + "x" + "+" + c + " = 0;";	
-		}
-		if (a < 0 && b < 0 && c < 0)
-		{
-			form.ok.value = a + "x²"  + b + "x" + c + " = 0;";
+			form.ok.value = a + "x²" + "+" + b + c + " = 0;";
 		}
 // Обчислювання формул.
 		if (a < 0 && b )
