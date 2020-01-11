@@ -84,7 +84,6 @@ draw.onclick = function() {
 			form.ok.value = a + "x²" + "+" + b + c + " = 0;";
 		}
 // Обчислювання формул.
-		if (a < 0 && b )
 		var D;
 		var x1;
 		var x2;
