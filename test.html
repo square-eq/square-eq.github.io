@@ -28,6 +28,41 @@
 <div class="form-group">
 			<h1 class = "input" align="center">Самоперевірка. Розв’яжи приклади.</h1>
 			<br />
+<center><p><font face ="Monserrat" size = "+2">Спочатку почнемо з легшого. Вам буде дано 5 рівнянь з випадковими коефієнтами. Відповідь записати, округливши до 3 знаків після коми. Якщо корінь з дискримінанта добути не можна, то округліть значення теж до 3 знаків. Якщо коренів немає - введіть "Корені відсутні".</font></p></center>
+            <br />
+            <br />
+            <p id = "equation1"><font face = "Times New Roman"></font></p>
+    			<label>
+					Відповідь: 
+					<input type = text name = "ransw1" />
+					</label>
+                <p id = "equation2"><font face = "Times New Roman"></font></p>
+    			<label>
+					Відповідь: 
+					<input type = text name = "ransw2" />
+					</label>
+                    <p id = "equation3"><font face = "Times New Roman"></font></p>
+    			<label>
+					Відповідь: 
+					<input type = text name = "ransw3" />
+					</label>
+                    <p id = "equation4"><font face = "Times New Roman"></font></p>
+    			<label>
+					Відповідь: 
+					<input type = text name = "ransw4" />
+					</label>
+                    <p id = "equation5"><font face = "Times New Roman"></font></p>
+    			<label>
+					Відповідь: 
+					<input type = text name = "ransw5" />
+					</label>
+                <br />
+                <br />
+			<input type="button" class="btn btn-success" id="rcalc" value="Перевірити!">
+			Ваш результат:
+			<input type="text" name="rresult" readonly>
+            <br />
+            <br />
 			<p><font face="Georgia" size = "+2">  1) Знайдіть усі значення а, при яких рівняння x<small><sup>2</small></sup>-3ax+9=0 має два різні корені. Відповідь запишіть через кому:</font></p>
 			<label>
 					Відповідь: 
@@ -106,6 +141,7 @@
 	<script src="quadraticscript.js">
 						
 		</script>
+	<script src="random-equation.js"></script>
 	</font></p>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
