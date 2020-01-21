@@ -9,8 +9,9 @@
 		background-attachment: fixed;
 		background-size: contain;
 	}
-	.definition{
-		border: 2px solid red;	
+	.definition
+        {
+		border: 2px solid #FF0004;	
 	}
 	.formulas{
 		display: block;
