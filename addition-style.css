@@ -37,7 +37,7 @@
 		}
 		body{
 		background-image: url(m9_2.png);
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 		background-attachment: fixed;
 		background-size: contain;
 	}
