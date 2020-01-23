@@ -60,7 +60,7 @@
 		display: block;
 		width:677px;
 		height: 436px;
-		margin-right: auto;
+		margin: auto;
 		transition: background-image, .2s linear;
 	}
 	a.rollover:hover
@@ -84,7 +84,7 @@
 		display: block;
 		width:677px;
 		height: 436px;
-		margin-left: auto;
+		margin: auto;
 		transition: background-image, .2s linear;
 	}
 	a.rollover2:hover
@@ -96,7 +96,7 @@
 		display: block;
 		width:717px;
 		height: 415px;
-		margin-right: auto;
+		margin: auto;
 		transition: background-image, .2s linear;
 	}
 	a.rollover3:hover
