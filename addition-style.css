@@ -18,7 +18,6 @@
 			font-family: 'Montserrat', sans-serif;
 		}
 		.input {
-			background: green;
 			margin: auto;
 			display: block;
 			text-align: center;
@@ -44,7 +43,6 @@
 	}
 	.dopomoga{
 			display: block;
-			background: #66CDAA;
 			margin: auto;
 			width:850px;
 		font-family: 'Montserrat', sans-serif;
