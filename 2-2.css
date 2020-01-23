@@ -23,7 +23,7 @@
 	.image {
 		display: block;
 		margin:auto;
-		border: 2px #FF0004 solid;
+		border: 2px blue solid;
 	}
 	  header {
     display: block;
